@@ -70,8 +70,13 @@
       function changeProductImage(color) {
         const colorToImage = {
           red_black: '11color4.jpg',
-          white: '11color5.jpg',
-          blue: '11color6.jpg',
+          black: '11color5.jpg',
+          yellow_black: '11color6.jpg',
+          white_gray: '11color7.jpg',
+          white: '11color8.jpg',
+          blue_white: '11color9.jpg',
+          white_black: '11color10.jpg',
+          white_purple: '11color11.jpg',
         };
 
         const filename = colorToImage[color] || '11color4.jpg';
@@ -99,8 +104,15 @@
           <!-- ✅ Color Selection Buttons -->
           <div class="flex gap-4 mb-6 justify-center">
             <button onclick="changeProductImage('red_black')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FF0000, #000000);"></button>
-            <button onclick="changeProductImage('white')" class="w-8 h-8 rounded-full bg-white border"></button>
-            <button onclick="changeProductImage('blue')" class="w-8 h-8 rounded-full bg-blue-500"></button>
+            <button onclick="changeProductImage('black')" class="w-8 h-8 rounded-full bg-black"></button>
+            <button onclick="changeProductImage('yellow_black')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FFFF00, #000000);"></button>
+<button onclick="changeProductImage('white_gray')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FFFFFF, #808080);"></button>
+            <button onclick="changeProductImage('white')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FFFFFF);"></button>
+<button onclick="changeProductImage('blue_white')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #0000FF, #FFFFFF);"></button>
+<button onclick="changeProductImage('white_black')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FFFFFF, #000000);"></button>
+<button onclick="changeProductImage('white_purple')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FFFFFF, #800080);"></button>
+
+            
           </div>
 
           <p class="text-xl text-gray-700 font-semibold mb-6" id="product-price">Price</p>
@@ -108,9 +120,14 @@
           <div class="mb-6">
             <label for="color" class="block text-gray-700 mb-2">Select Color</label>
             <select id="color" class="bg-gray-100 rounded p-2 w-full mb-3" onchange="changeProductImage(this.value)">
-              <option value="black">Black</option>
-              <option value="white">White</option>
-              <option value="blue">Blue</option>
+              <option value="red_black">Red Thunders</option>
+              <option value="black">Black Cats</option>
+              <option value="yellow_black">Yellow Thunders</option>
+              <option value="white_gray">White Oreos</option>
+              <option value="white">Pure Moneys</option>
+              <option value="blue_white">Military Blue</option>
+              <option value="white_black">Military Black</option>
+              <option value="white_purple">Metallic Purple</option>
             </select>
           </div>
 
