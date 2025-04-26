@@ -18,9 +18,9 @@
         const params = getQueryParams();
         const productName = params.name;
 
-        document.getElementById('product-name').textContent = 'Polo T-Shirt';
-        document.getElementById('product-image').src = 'images/color1.jpg';
-        document.getElementById('product-price').textContent = '$40';
+        document.getElementById('product-name').textContent = 'Air Jordan 4';
+        document.getElementById('product-image').src = 'images/11color4.jpg';
+        document.getElementById('product-price').textContent = '$65';
       };
 
       function handlePayment() {
@@ -39,7 +39,7 @@
               purchase_units: [
                 {
                   amount: {
-                    value: '40.00',
+                    value: '65.00',
                   },
                   shipping: {
                     address: {
@@ -69,12 +69,12 @@
       // ✅ Simpler image update function
       function changeProductImage(color) {
         const colorToImage = {
-          black: 'color1.jpg',
-          white: 'color2.jpg',
-          blue: 'color3.jpg',
+          black: '11color4.jpg',
+          white: '11color5.jpg',
+          blue: '11color6.jpg',
         };
 
-        const filename = colorToImage[color] || 'color1.jpg';
+        const filename = colorToImage[color] || '11color4.jpg';
         document.getElementById('product-image').src = 'images/' + filename;
       }
     </script>
@@ -98,7 +98,7 @@
 
           <!-- ✅ Color Selection Buttons -->
           <div class="flex gap-4 mb-6 justify-center">
-            <button onclick="changeProductImage('black')" class="w-8 h-8 rounded-full bg-black"></button>
+            <button onclick="changeProductImage('black_orange')" class="w-8 h-8 rounded-full bg-gradient-to-r from-#000000 to-red-500"></button>
             <button onclick="changeProductImage('white')" class="w-8 h-8 rounded-full bg-white border"></button>
             <button onclick="changeProductImage('blue')" class="w-8 h-8 rounded-full bg-blue-500"></button>
           </div>
