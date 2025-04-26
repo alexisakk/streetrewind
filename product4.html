@@ -19,7 +19,7 @@
         const productName = params.name;
 
         document.getElementById('product-name').textContent = 'Nike Air Force 1';
-        document.getElementById('product-image').src = 'images/color1.jpg';
+        document.getElementById('product-image').src = 'images/11color2.jpg';
         document.getElementById('product-price').textContent = '$40';
       };
 
@@ -69,8 +69,8 @@
       // ✅ Simpler image update function
       function changeProductImage(color) {
         const colorToImage = {
-          black: '11color3.jpg',
           white: '11color2.jpg',
+          black: '11color3.jpg',
         };
 
         const filename = colorToImage[color] || 'color1.jpg';
