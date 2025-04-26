@@ -18,9 +18,9 @@
         const params = getQueryParams();
         const productName = params.name;
 
-        document.getElementById('product-name').textContent = 'Polo T-Shirt';
+        document.getElementById('product-name').textContent = 'Chrome Hearts T-Shirts';
         document.getElementById('product-image').src = 'images/11color16.jpg';
-        document.getElementById('product-price').textContent = '$40';
+        document.getElementById('product-price').textContent = '$50';
       };
 
       function handlePayment() {
@@ -40,7 +40,7 @@
             return actions.order.create({
               purchase_units: [{
                 amount: {
-                  value: '40.00',
+                  value: '50.00',
                 },
                 description: `Color: ${color}, Size: ${size}`,
                 shipping: {
