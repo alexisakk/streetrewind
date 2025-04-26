@@ -69,7 +69,7 @@
       // ✅ Simpler image update function
       function changeProductImage(color) {
         const colorToImage = {
-          black: '11color4.jpg',
+          red_black: '11color4.jpg',
           white: '11color5.jpg',
           blue: '11color6.jpg',
         };
@@ -98,7 +98,7 @@
 
           <!-- ✅ Color Selection Buttons -->
           <div class="flex gap-4 mb-6 justify-center">
-            <button onclick="changeProductImage('black_orange')" class="w-8 h-8 rounded-full bg-gradient-to-r from-#000000 to-red-500"></button>
+            <button onclick="changeProductImage('red_black')" class="w-8 h-8 rounded-full" style="background: linear-gradient(to right, #FF0000, #000000);"></button>
             <button onclick="changeProductImage('white')" class="w-8 h-8 rounded-full bg-white border"></button>
             <button onclick="changeProductImage('blue')" class="w-8 h-8 rounded-full bg-blue-500"></button>
           </div>
